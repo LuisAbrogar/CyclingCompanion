@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cycling Companion</string>
+    <string name="page_CR">Create A New Ride</string>
+    <string name="page_RH">View Ride History</string>
+    <string name="page_MM"><u>Main Menu</u></string>
+    <string name="page_MM2">Go on a ride!</string>
+    <string name="page_MM3">Check out your previous rides!</string>
+</resources>

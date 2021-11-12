@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28797758990",
+    "project_id": "cyclingcompanion-d300b",
+    "storage_bucket": "cyclingcompanion-d300b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28797758990:android:fe460325cefbc883ed965f",
+        "android_client_info": {
+          "package_name": "com.example.cyclingcompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28797758990-56ckfd5ns2v9s2d0jjo7r72d4r6omc1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZulKXUZo2UVK3olOkYoCc7bqGaV65ufQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28797758990-56ckfd5ns2v9s2d0jjo7r72d4r6omc1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

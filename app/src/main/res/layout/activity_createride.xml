@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRide"
+    >
+
+    <fragment
+        android:id="@+id/CR_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.40"
+
+        app:layout_constraintTop_toTopOf ="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/button_CR_startRide"
+        android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.50"
+        android:layout_height="wrap_content"
+        android:text="START RIDE"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/CR_map"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:id="@+id/button_CR_endRide"
+        android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.50"
+        android:layout_height="wrap_content"
+        android:text="END RIDE"
+
+        app:layout_constraintTop_toBottomOf="@+id/CR_map"
+        app:layout_constraintLeft_toRightOf="@+id/button_CR_startRide"
+        />
+
+    <TextView
+        android:id="@+id/tv_CR_title_speed"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="30dp"
+        android:text="Current Speed:"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_CR_startRide"
+        />
+    <TextView
+        android:id="@+id/tv_CR_speed"
+        android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.50"
+        android:layout_height="100dp"
+        android:text="SPEED HERE"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_title_speed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_CR_title_elevation"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="30dp"
+        android:text="Current Elevation:"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_CR_title_speed"
+        app:layout_constraintTop_toBottomOf="@+id/button_CR_endRide"
+        />
+    <TextView
+        android:id="@+id/tv_CR_elevation"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="100dp"
+        android:text="ELEVATION HERE"
+        android:gravity="center"
+
+        app:layout_constraintLeft_toRightOf="@+id/tv_CR_speed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_title_elevation"
+        />
+
+    <TextView
+        android:id="@+id/tv_CR_title_distance"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="30dp"
+        android:text="Current Distance:"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_speed"
+        />
+    <TextView
+        android:id="@+id/tv_CR_distance"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="100dp"
+        android:text="DISTANCE HERE"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_title_distance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_CR_title_time"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="30dp"
+        android:text="Time Elapsed:"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_CR_title_distance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_elevation"
+        />
+    <TextView
+        android:id="@+id/tv_CR_time"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        android:layout_height="100dp"
+        android:text="TIME HERE"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_CR_title_time"
+        app:layout_constraintLeft_toRightOf="@id/tv_CR_distance"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/button_CR_mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_CR_startRide"
+        android:text="BACK TO MAIN MENU"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_CR_distance"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
